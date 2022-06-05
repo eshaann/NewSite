@@ -1,0 +1,58 @@
+{% extends "base.html" %}
+{% block content %}
+      <div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <form action="index.html" method="get">
+          <label for="shoetype">Shoetype:</label>
+          <select name = "shoetype">
+            <option value ="1">Lifestyle</option>
+            <option value="2">Sports</option>
+          </select>
+          <br>
+          <br>
+          <label for="desc">Add a description:</label>
+          <input type="desc" id= "desctag"name="desc" placeholder="Add your description">
+          <br>
+          <br>
+
+          <label for="male">Male:</label>
+          <input type ="radio" id="male" name="shoe_choice" value="male">
+          <label for="female">Female:</label>
+          <input type ="radio" id="female" name="shoe_choice" value="female">
+          <br>
+          <br>
+          <label for="shoetype">Size:</label>
+          <select name = "shoesize">
+            <option value ="6">6</option>
+            <option value ="6.5">6.5</option>
+            <option value ="7">7</option>
+            <option value ="7.5">7.5</option>
+            <option value ="8">8</option>
+            <option value ="8.5">8.5</option>
+            <option value ="9">9</option>
+            <option value ="9.5">9.5</option>
+            <option value ="10">10</option>
+            <option value ="10.5">10.5</option>
+            <option value ="11">11</option>
+            <option value ="11.5">11.5</option>
+            <option value ="12">12</option>
+            <option value ="12.5">12.5</option>
+            <option value ="13">13</option>
+            <option value ="13.5">13.5</option>
+          </select>
+          <br>
+          <br>
+          <label for ="shoeimg"> Attach an image of your product.</label>
+          <input type="file" id="shoeimg" name ="shoeimg" accept = "image/png, image/jpeg">
+          <br>
+          <br>
+          <input type ="submit" value="submit">
+      </form>
+      </div>
+  {% endblock %}
