@@ -26,6 +26,13 @@ def thankyou():
 def page_not_found(e):
     return render_template('404.html'), 404
 
+@app.route('/lifestyle')
+def lifestyle():
+    return render_template('lifestyle.html')
+
+@app.route('/sports')
+def sports():
+    return render_template('sports.html')
 
 if __name__ == '__main__':
     app.run(debug = True)
